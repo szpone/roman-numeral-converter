@@ -20,6 +20,11 @@ class TestRomanNumeralConverter(TestCase):
 
         self.assertEqual(value, "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMCCLXXXIX")
 
+    def test_number_zero(self):
+        value = roman_numeral_converter(0)
+
+        self.assertEqual(value, "Error! Number is zero")
+
 
 if __name__ == "__main__":
     main()
