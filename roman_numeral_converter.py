@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 from typing import Dict
 
@@ -20,4 +20,15 @@ ROMAN_NUMERALS: Dict[str, int] = {
 
 
 def roman_numeral_converter(number: int) -> str:
-    pass
+    roman_numeral = ""
+
+    if number > 0:
+        pass
+    else:
+        roman_numeral.join("Error! Number is 0")
+
+    return roman_numeral
+
+
+roman_numeral_converter(5)
+
