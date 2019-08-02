@@ -14,7 +14,6 @@ class TestRomanNumeralConverter(TestCase):
 
         self.assertEqual(value, "CXXV")
 
-
     def test_number_zero(self):
         value = roman_numeral_converter(0)
 
