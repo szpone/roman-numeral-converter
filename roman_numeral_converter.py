@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
-from typing import Dict
 from sys import argv
+from typing import Dict
 import argparse
 
 
