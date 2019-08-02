@@ -28,12 +28,10 @@ def roman_numeral_converter(number: int) -> str:
     while number > 0:
         for key, value in  ROMAN_NUMERALS.items():
             quotient, remainder = divmod(number, value)
-            print(quotient, remainder)
 
             if quotient is not 0:
                 result.append(quotient * key)
                 number = remainder
-
 
     return "".join(result)
 
