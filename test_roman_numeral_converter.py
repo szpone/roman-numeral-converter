@@ -4,6 +4,11 @@ from roman_numeral_converter import roman_numeral_converter
 
 class TestRomanNumeralConverter(TestCase):
 
+    def test_convert_small_digit(self):
+        value = roman_numeral_converter(3)
+
+        self.assertEqual(value, "III")
+
     def test_convert_digit(self):
         value = roman_numeral_converter(5)
 

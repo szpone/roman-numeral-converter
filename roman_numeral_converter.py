@@ -38,15 +38,18 @@ def roman_numeral_converter(number: int) -> str:
     return "".join(result)
 
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("number", default="check_string_for_empty", help="Argument should be an int", type=int)
-    args = parser.parse_args()
-    roman_numeral_converter(args.number)
-    print(roman_numeral_converter(args.number))
+def main(args):
+    result = roman_numeral_converter(args.number)
+
+    print(result)
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("number", default="check_string_for_empty", help="Argument should be an int", type=int)
+
+    args = parser.parse_args()
+
+    main(args)
 
 
