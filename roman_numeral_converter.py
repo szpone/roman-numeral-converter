@@ -31,8 +31,9 @@ def roman_numeral_converter(number: int) -> str:
             print(quotient, remainder)
 
             if quotient is not 0:
-                result.append(key)
+                result.append(quotient * key)
                 number = remainder
+
 
     return "".join(result)
 
