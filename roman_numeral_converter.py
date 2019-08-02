@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
 from typing import Dict
+from sys import argv
+import argparse
 
 
 ROMAN_NUMERALS: Dict[str, int] = {
@@ -35,6 +37,16 @@ def roman_numeral_converter(number: int) -> str:
 
     return "".join(result)
 
+parser = argparse.ArgumentParser()
+parser.add_argument("number", default="check_string_for_empty")
+args = parser.parse_args()
 
-roman_numeral_converter(1997)
+
+
+
+
+
+
+
+roman_numeral_converter(int(argv[1]))
 
