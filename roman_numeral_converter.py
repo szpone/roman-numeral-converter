@@ -27,7 +27,7 @@ def roman_numeral_converter(number: int) -> str:
     if number == 0:
         return "Error! Number is zero"
 
-    while number > 0:
+    while int(number) > 0:
         for key, value in  ROMAN_NUMERALS.items():
             quotient, remainder = divmod(number, value)
 
@@ -37,15 +37,10 @@ def roman_numeral_converter(number: int) -> str:
 
     return "".join(result)
 
+
 parser = argparse.ArgumentParser()
-parser.add_argument("number", default="check_string_for_empty")
+parser.add_argument("number", default="check_string_for_empty", help="Argument should be an int", type=int)
 args = parser.parse_args()
-
-
-
-
-
-
 
 
 roman_numeral_converter(int(argv[1]))
