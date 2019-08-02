@@ -6,6 +6,18 @@ Description
 
 This is a simple Python script which converts arabic numeral into Roman numerals. You need Python 3.7+ and mypy to run it.
 
+
+Getting Python3 and pip
+-----------------------
+
+Please refer to the Python wiki to determine how you should install Python regarding your operating system:
+https://wiki.python.org/moin/BeginnersGuide/Download
+
+If your operating system or Linux distribution is not listed, check wiki. For example for Arch Linux go to Arch wiki.
+
+The same applies to pip: https://pip.pypa.io/en/stable/installing/
+
+
 Getting mypy
 ------------
 
@@ -41,7 +53,7 @@ Firstly you need clone GitHub repository using
 
 |
 
-and then go into folder you just cloned. Open console there and simply type
+and then go into folder you just cloned. Open console there and simply type:
 
 ::
 
@@ -50,6 +62,12 @@ and then go into folder you just cloned. Open console there and simply type
 |
 
 The results should be printed in the console.
+
+You can receive help by typing:
+
+::
+
+    $ roman_numeral_converter -h
 
 
 Running tests
