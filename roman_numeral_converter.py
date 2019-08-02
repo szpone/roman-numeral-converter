@@ -20,15 +20,22 @@ ROMAN_NUMERALS: Dict[str, int] = {
 
 
 def roman_numeral_converter(number: int) -> str:
-    roman_numeral = ""
+    result = []
 
-    if number > 0:
-        pass
-    else:
-        roman_numeral.join("Error! Number is 0")
+    if number == 0:
+        return "Error! Number is zero"
 
-    return roman_numeral
+    while number > 0:
+        for key, value in  ROMAN_NUMERALS.items():
+            quotient, remainder = divmod(number, value)
+            print(quotient, remainder)
+
+            if quotient is not 0:
+                result.append(key)
+                number = remainder
+
+    return "".join(result)
 
 
-roman_numeral_converter(5)
+roman_numeral_converter(1997)
 
